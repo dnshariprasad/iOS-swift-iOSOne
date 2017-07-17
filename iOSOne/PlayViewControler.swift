@@ -10,16 +10,23 @@ import UIKit
 import AVFoundation
 
 class PlayViewControler: UIViewController {
-    var audioPlayer :AVAudioPlayer?
-
+    var audioPlayer :AVAudioPlayer!
+    var receivedAudio:RecordedAudio!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let filePath=Bundle.main.path(forResource: "beberexha",ofType:"mp3")
-        
-        let filePathUrl=URL.init(fileURLWithPath: filePath!)
-        
-        try! audioPlayer = AVAudioPlayer(contentsOf: filePathUrl)
+//        let filePath=Bundle.main.path(forResource: "beberexha",ofType:"mp3")
+//        
+//        let filePathUrl=URL.init(fileURLWithPath: filePath!)
+//        
+//        try! audioPlayer = AVAudioPlayer(contentsOf: filePathUrl)
+//        audioPlayer?.enableRate=true
+        do{
+        try audioPlayer = AVAudioPlayer(contentsOf: receivedAudio.filePathUrl)
         audioPlayer?.enableRate=true
+        }catch{
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
