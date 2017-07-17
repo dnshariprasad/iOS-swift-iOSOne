@@ -15,12 +15,6 @@ class PlayViewControler: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let filePath=Bundle.main.path(forResource: "beberexha",ofType:"mp3")
-//        
-//        let filePathUrl=URL.init(fileURLWithPath: filePath!)
-//        
-//        try! audioPlayer = AVAudioPlayer(contentsOf: filePathUrl)
-//        audioPlayer?.enableRate=true
         do{
         try audioPlayer = AVAudioPlayer(contentsOf: receivedAudio.filePathUrl)
         audioPlayer?.enableRate=true
@@ -47,8 +41,9 @@ class PlayViewControler: UIViewController {
         audioPlayer?.currentTime=0.0
         audioPlayer?.prepareToPlay()
         audioPlayer?.play()
-
     }
+    
+    
     
     @IBAction func stopAudio(_ sender: UIButton) {
         audioPlayer?.stop()
