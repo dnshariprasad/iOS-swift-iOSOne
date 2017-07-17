@@ -14,6 +14,9 @@
 		9F0BEA171F1C3BDC00C1D554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0BEA151F1C3BDC00C1D554 /* LaunchScreen.storyboard */; };
 		9F0BEA221F1C3BDC00C1D554 /* iOSOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BEA211F1C3BDC00C1D554 /* iOSOneTests.swift */; };
 		9F0BEA2D1F1C3BDC00C1D554 /* iOSOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BEA2C1F1C3BDC00C1D554 /* iOSOneUITests.swift */; };
+		9F0BEA3B1F1C41B200C1D554 /* PlayViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BEA3A1F1C41B200C1D554 /* PlayViewControler.swift */; };
+		9F0BEA461F1C46CD00C1D554 /* beberexha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F0BEA451F1C46CD00C1D554 /* beberexha.mp3 */; };
+		9F0BEA481F1C476B00C1D554 /* beberexha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F0BEA471F1C476B00C1D554 /* beberexha.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		9F0BEA281F1C3BDC00C1D554 /* iOSOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0BEA2C1F1C3BDC00C1D554 /* iOSOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOneUITests.swift; sourceTree = "<group>"; };
 		9F0BEA2E1F1C3BDC00C1D554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0BEA3A1F1C41B200C1D554 /* PlayViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewControler.swift; sourceTree = "<group>"; };
+		9F0BEA451F1C46CD00C1D554 /* beberexha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beberexha.mp3; path = ../../../Desktop/beberexha.mp3; sourceTree = "<group>"; };
+		9F0BEA471F1C476B00C1D554 /* beberexha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beberexha.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		9F0BEA001F1C3BDC00C1D554 = {
 			isa = PBXGroup;
 			children = (
+				9F0BEA451F1C46CD00C1D554 /* beberexha.mp3 */,
 				9F0BEA0B1F1C3BDC00C1D554 /* iOSOne */,
 				9F0BEA201F1C3BDC00C1D554 /* iOSOneTests */,
 				9F0BEA2B1F1C3BDC00C1D554 /* iOSOneUITests */,
@@ -97,12 +104,14 @@
 		9F0BEA0B1F1C3BDC00C1D554 /* iOSOne */ = {
 			isa = PBXGroup;
 			children = (
+				9F0BEA471F1C476B00C1D554 /* beberexha.mp3 */,
 				9F0BEA0C1F1C3BDC00C1D554 /* AppDelegate.swift */,
 				9F0BEA0E1F1C3BDC00C1D554 /* ViewController.swift */,
 				9F0BEA101F1C3BDC00C1D554 /* Main.storyboard */,
 				9F0BEA131F1C3BDC00C1D554 /* Assets.xcassets */,
 				9F0BEA151F1C3BDC00C1D554 /* LaunchScreen.storyboard */,
 				9F0BEA181F1C3BDC00C1D554 /* Info.plist */,
+				9F0BEA3A1F1C41B200C1D554 /* PlayViewControler.swift */,
 			);
 			path = iOSOne;
 			sourceTree = "<group>";
@@ -232,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0BEA481F1C476B00C1D554 /* beberexha.mp3 in Resources */,
+				9F0BEA461F1C46CD00C1D554 /* beberexha.mp3 in Resources */,
 				9F0BEA171F1C3BDC00C1D554 /* LaunchScreen.storyboard in Resources */,
 				9F0BEA141F1C3BDC00C1D554 /* Assets.xcassets in Resources */,
 				9F0BEA121F1C3BDC00C1D554 /* Main.storyboard in Resources */,
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F0BEA0F1F1C3BDC00C1D554 /* ViewController.swift in Sources */,
+				9F0BEA3B1F1C41B200C1D554 /* PlayViewControler.swift in Sources */,
 				9F0BEA0D1F1C3BDC00C1D554 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iosone.iOSOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iosone.iOSOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
