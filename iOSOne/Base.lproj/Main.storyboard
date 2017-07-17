@@ -39,8 +39,7 @@
                                 <rect key="frame" x="162" y="602" width="50" height="50"/>
                                 <state key="normal" image="stopImage"/>
                                 <connections>
-                                    <action selector="recordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBR-MF-gTv"/>
-                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mh8-XC-McR"/>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoT-UR-w3q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,12 +62,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+            <point key="canvasLocation" x="971.5" y="36.5"/>
         </scene>
         <!--Play View Controler-->
         <scene sceneID="PdF-qM-cUP">
             <objects>
-                <viewController id="byE-Ik-HDY" customClass="PlayViewControler" customModule="iOSOne" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stopRecording" id="byE-Ik-HDY" customClass="PlayViewControler" customModule="iOSOne" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ek-W3-P3E"/>
                         <viewControllerLayoutGuide type="bottom" id="yrV-4k-gEQ"/>
