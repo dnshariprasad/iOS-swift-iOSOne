@@ -19,6 +19,7 @@ class PlayViewControler: UIViewController {
         let filePathUrl=URL.init(fileURLWithPath: filePath!)
         
         try! audioPlayer = AVAudioPlayer(contentsOf: filePathUrl)
+        audioPlayer?.enableRate=true
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +27,17 @@ class PlayViewControler: UIViewController {
     }
     
     @IBAction func playSlow(_ sender: UIButton) {
+        audioPlayer?.stop()
+        audioPlayer?.rate=0.3
         audioPlayer?.prepareToPlay()
         audioPlayer?.play()
     }
 
+    @IBAction func playSpeed(_ sender: UIButton) {
+        audioPlayer?.stop()
+        audioPlayer?.rate=1.5
+        audioPlayer?.prepareToPlay()
+        audioPlayer?.play()
+
+    }
 }

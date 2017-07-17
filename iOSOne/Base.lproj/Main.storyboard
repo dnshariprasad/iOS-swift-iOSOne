@@ -82,9 +82,18 @@
                                     <action selector="playSlow:" destination="byE-Ik-HDY" eventType="touchUpInside" id="ykJ-ak-nez"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-KH-hvR">
+                                <rect key="frame" x="244" y="94" width="100" height="100"/>
+                                <state key="normal" image="speedImage"/>
+                                <connections>
+                                    <action selector="playSpeed:" destination="byE-Ik-HDY" eventType="touchUpInside" id="90r-4z-hky"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EeD-KH-hvR" secondAttribute="trailing" constant="15" id="2Jy-CY-QhI"/>
+                            <constraint firstItem="EeD-KH-hvR" firstAttribute="top" secondItem="6ek-W3-P3E" secondAttribute="bottom" constant="30" id="TIM-b7-E97"/>
                             <constraint firstItem="3dk-mY-1cG" firstAttribute="leading" secondItem="siF-Rp-wDe" secondAttribute="leadingMargin" constant="15" id="atx-Zb-Wv6"/>
                             <constraint firstItem="3dk-mY-1cG" firstAttribute="top" secondItem="6ek-W3-P3E" secondAttribute="bottom" constant="30" id="vas-le-5eJ"/>
                         </constraints>
@@ -116,6 +125,7 @@
     <resources>
         <image name="recordImage" width="100" height="100"/>
         <image name="slowImage" width="100" height="100"/>
+        <image name="speedImage" width="100" height="100"/>
         <image name="stopImage" width="50" height="50"/>
     </resources>
 </document>
