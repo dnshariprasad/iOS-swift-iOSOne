@@ -13,7 +13,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordViewController" customModule="iOSOne" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,10 +89,19 @@
                                     <action selector="playSpeed:" destination="byE-Ik-HDY" eventType="touchUpInside" id="90r-4z-hky"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leC-Vd-FoE">
+                                <rect key="frame" x="162" y="602" width="50" height="50"/>
+                                <state key="normal" image="stopImage"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="byE-Ik-HDY" eventType="touchUpInside" id="Q5k-tg-Sek"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="EeD-KH-hvR" secondAttribute="trailing" constant="15" id="2Jy-CY-QhI"/>
+                            <constraint firstItem="leC-Vd-FoE" firstAttribute="centerX" secondItem="siF-Rp-wDe" secondAttribute="centerX" id="GMM-EW-kSa"/>
+                            <constraint firstItem="yrV-4k-gEQ" firstAttribute="top" secondItem="leC-Vd-FoE" secondAttribute="bottom" constant="15" id="Gpn-WY-JVM"/>
                             <constraint firstItem="EeD-KH-hvR" firstAttribute="top" secondItem="6ek-W3-P3E" secondAttribute="bottom" constant="30" id="TIM-b7-E97"/>
                             <constraint firstItem="3dk-mY-1cG" firstAttribute="leading" secondItem="siF-Rp-wDe" secondAttribute="leadingMargin" constant="15" id="atx-Zb-Wv6"/>
                             <constraint firstItem="3dk-mY-1cG" firstAttribute="top" secondItem="6ek-W3-P3E" secondAttribute="bottom" constant="30" id="vas-le-5eJ"/>

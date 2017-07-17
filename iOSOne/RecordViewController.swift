@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordViewController.swift
 //  iOSOne
 //
 //  Created by Kvana Dev9 on 16/07/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordViewController: UIViewController {
 
     @IBOutlet weak var recordLable: UILabel!
     @IBOutlet weak var stopButton: UIButton!

@@ -29,6 +29,7 @@ class PlayViewControler: UIViewController {
     @IBAction func playSlow(_ sender: UIButton) {
         audioPlayer?.stop()
         audioPlayer?.rate=0.3
+        audioPlayer?.currentTime=0.0
         audioPlayer?.prepareToPlay()
         audioPlayer?.play()
     }
@@ -36,8 +37,14 @@ class PlayViewControler: UIViewController {
     @IBAction func playSpeed(_ sender: UIButton) {
         audioPlayer?.stop()
         audioPlayer?.rate=1.5
+        audioPlayer?.currentTime=0.0
         audioPlayer?.prepareToPlay()
         audioPlayer?.play()
 
     }
+    
+    @IBAction func stopAudio(_ sender: UIButton) {
+        audioPlayer?.stop()
+    }
+    
 }
