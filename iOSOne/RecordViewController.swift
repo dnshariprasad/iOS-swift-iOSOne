@@ -30,8 +30,9 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
 
     @IBAction func recordButton(_ sender: UIButton) {
         stopButton.isHidden=false
-        recordLable.isHidden=false
-        
+        recordLable.text="Recording.."
+
+    
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
@@ -49,7 +50,6 @@ class RecordViewController: UIViewController,AVAudioRecorderDelegate {
     }
 
     @IBAction func stopRecording(_ sender: UIButton) {
-        recordLable.isHidden=true
         stopButton.isHidden=false
         recordLable.text="Tap to Record"
         audioRecorder.stop()

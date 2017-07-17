@@ -24,7 +24,8 @@ class PlayViewControler: UIViewController {
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+       
+    
     }
     
     @IBAction func playSlow(_ sender: UIButton) {
@@ -43,10 +44,9 @@ class PlayViewControler: UIViewController {
         audioPlayer?.play()
     }
     
-    
-    
-    @IBAction func stopAudio(_ sender: UIButton) {
+
+    @IBAction func stopPlayingAudio(_ sender: UIButton) {
         audioPlayer?.stop()
+
     }
-    
 }
